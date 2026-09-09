@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { site } from "@/data/projects";
+import { withBasePath } from "@/lib/basePath";
 
 export default function HireMeModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +63,7 @@ export default function HireMeModal() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="/Mohamed_Affan_H_Resume.pdf" download data-cursor="SAVE" className="hidden sm:block font-mono text-xs border border-[var(--red)] text-[var(--red)] px-4 py-2 hover:bg-[var(--red)] hover:text-white transition-all">
+          <a href={withBasePath("/Mohamed_Affan_H_Resume.pdf")} download data-cursor="SAVE" className="hidden sm:block font-mono text-xs border border-[var(--red)] text-[var(--red)] px-4 py-2 hover:bg-[var(--red)] hover:text-white transition-all">
             DOWNLOAD FULL PDF
           </a>
           <button onClick={close} data-cursor="CLOSE" className="w-10 h-10 flex items-center justify-center bg-[#2a2220] text-white hover:bg-[var(--red)] transition-colors">
@@ -77,7 +78,7 @@ export default function HireMeModal() {
         className="flex-1 w-full bg-[#1a1514] p-0 md:p-8 flex justify-center overflow-hidden"
       >
          <iframe 
-           src="/Mohamed_Affan_H_Resume.pdf#view=FitH&toolbar=0&navpanes=0" 
+           src={withBasePath("/Mohamed_Affan_H_Resume.pdf#view=FitH&toolbar=0&navpanes=0")}
            className="w-full max-w-5xl h-full border-none shadow-2xl bg-white"
            title="Mohamed Affan H Resume"
          />

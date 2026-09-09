@@ -5,6 +5,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { site, projects, flagshipProject } from "@/data/projects";
 import { getLenis } from "@/lib/useLenis";
+import { withBasePath } from "@/lib/basePath";
 import HeroSignal from "./HeroSignal";
 import MatrixRain from "./MatrixRain";
 
@@ -158,7 +159,7 @@ export default function Hero() {
         >
           {photoOk ? (
             <img
-              src="/affan.jpg"
+              src={withBasePath("/affan.jpg")}
               alt="Mohamed Affan H."
               className="w-full h-full object-cover"
               style={{ objectPosition: "78% 22%", filter: "grayscale(1) contrast(1.15) brightness(.9)" }}

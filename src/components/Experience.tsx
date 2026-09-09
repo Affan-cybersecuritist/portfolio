@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { timeline, certifications } from "@/data/projects";
+import { withBasePath } from "@/lib/basePath";
 import Reveal from "./Reveal";
 
 export default function Experience() {
@@ -232,7 +233,7 @@ export default function Experience() {
                     </p>
                     
                     {c.link && (
-                      <a href={c.link} target="_blank" rel="noopener noreferrer" className="font-mono text-[10px] text-[var(--red)] border border-[var(--red)] px-6 py-3 uppercase tracking-widest hover:bg-[var(--red)] hover:text-[#050404] transition-colors cursor-pointer inline-flex items-center gap-3">
+                      <a href={withBasePath(c.link)} target="_blank" rel="noopener noreferrer" className="font-mono text-[10px] text-[var(--red)] border border-[var(--red)] px-6 py-3 uppercase tracking-widest hover:bg-[var(--red)] hover:text-[#050404] transition-colors cursor-pointer inline-flex items-center gap-3">
                         VIEW_CREDENTIAL 
                         <span className="text-lg leading-none">↗</span>
                       </a>
