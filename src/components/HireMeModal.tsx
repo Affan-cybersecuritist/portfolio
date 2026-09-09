@@ -33,6 +33,12 @@ export default function HireMeModal() {
   }, [isOpen]);
 
   const close = () => {
+    // Clear custom cursor hover state before the button unmounts
+    const ring = document.getElementById("cursor-ring");
+    if (ring) {
+      ring.classList.remove("hover");
+      ring.dataset.label = "";
+    }
     gsap.to("#hire-me-modal", { y: 20, opacity: 0, scale: 0.95, duration: 0.3, ease: "power2.in" });
     gsap.to("#hire-me-overlay", { 
       opacity: 0, 
