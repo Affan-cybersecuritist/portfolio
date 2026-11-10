@@ -118,7 +118,7 @@ export default function Experience() {
              The Crucible
            </h2>
            <p className="font-mono text-[#9B948C] mt-8 max-w-xl mx-auto text-xs md:text-sm leading-relaxed">
-             15+ hackathons across AI, cybersecurity, and product. No tutorials. No hand-holding. These are the arenas where I shipped reality.
+             Industry experience, flagship hackathons, and technical education. The arenas where I engineer reality.
            </p>
         </Reveal>
 
@@ -146,9 +146,15 @@ export default function Experience() {
                      {/* Cyber Accent Line */}
                      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-[var(--red)] to-transparent opacity-50" />
                      
-                     {t.highlight && (
-                        <div className="inline-block font-mono text-[9px] bg-[var(--red)] text-white px-2 py-1 uppercase tracking-widest mb-5">
-                          Critical_Event
+                     {t.badge && (
+                        <div className={`inline-block font-mono text-[9px] px-2.5 py-1 uppercase tracking-widest mb-5 border ${
+                          t.badge === 'INTERNSHIP'
+                            ? 'bg-[var(--red)] text-white border-[var(--red)] shadow-[0_0_15px_rgba(215,38,61,0.5)] font-bold'
+                            : t.highlight
+                              ? 'bg-[rgba(215,38,61,0.15)] text-[var(--red)] border-[var(--red)]'
+                              : 'bg-transparent text-[#9B948C] border-[#3A3330]'
+                        }`}>
+                          {t.badge}
                         </div>
                      )}
                      

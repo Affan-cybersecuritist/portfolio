@@ -44,7 +44,7 @@ export default function Profile() {
               </div>
               <div>
                 <dt className="text-[var(--ink-muted)] font-bold tracking-[.05em] mb-1">STATUS</dt>
-                <dd className="font-semibold">Open to Internships</dd>
+                <dd className="font-semibold text-[var(--red)]">Academic Intern @ Prophaze Technologies</dd>
               </div>
               <div>
                 <dt className="text-[var(--ink-muted)] font-bold tracking-[.05em] mb-1">MINOR</dt>

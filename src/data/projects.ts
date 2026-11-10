@@ -247,41 +247,43 @@ export type TimelineItem = {
   date: string;
   title: string;
   body: string;
+  badge?: string;
   highlight?: boolean;
 };
 
 export const timeline: TimelineItem[] = [
   {
+    date: "Nov 2026 - Present",
+    title: "Academic Intern (Cybersecurity) — Prophaze Technologies",
+    body: "Working on Kubernetes-native Web Application & API Protection (WAAP), real-time threat intelligence, anomaly detection, and cloud-native application defense.",
+    badge: "INTERNSHIP",
+    highlight: true,
+  },
+  {
     date: "2025 - 2029",
-    title: "B.E. Cybersecurity - Chennai Institute of Technology",
-    body: "CGPA 7.85. Minor in Innovation & Entrepreneurship (2026-2028).",
+    title: "B.E. Cybersecurity — Chennai Institute of Technology",
+    body: "CGPA 7.85. Specializing in security engineering, network defense, and applied machine learning. Minor in Innovation & Entrepreneurship (2026-2028).",
+    badge: "EDUCATION",
     highlight: true,
   },
   {
     date: "Razorpay AI Buildathon (Track 2: AI Risk Manager)",
-    title: "Risk Autopsy - Flagship Project",
-    body: "Built an autonomous fraud policy evaluation engine that proves a new risk policy is safer and cheaper than the current production one.",
+    title: "Risk Autopsy — Flagship AI Risk Engine",
+    body: "Architected an autonomous fraud policy evaluation engine that proves a new risk policy is safer and cheaper than production before shipping (98.2% adversarial precision, 8 automated gates).",
+    badge: "FLAGSHIP",
     highlight: true,
   },
   {
-    date: "SuRaksha Cyber Hackathon 2.0 - Canara Bank",
-    title: "ZeroTrustUs - Shortlisted",
-    body: "A Zero Trust platform with a LangChain SQL-agent audit backend and a Next.js dashboard, assessing database configs against regulatory baselines offline.",
+    date: "SuRaksha Cyber Hackathon 2.0 — Canara Bank",
+    title: "ZeroTrustUs — Finalist Shortlist",
+    body: "Built an offline Zero Trust auditor for banking-grade database configurations using local Ollama (Llama 3.2) and LangChain SQL agents with a Next.js control plane.",
+    badge: "SHORTLIST",
   },
   {
-    date: "InnoGenesis Hackathon - Dr. NVR NRI Institute of Technology, AP",
-    title: "DevSecOps AI Swarm Engine, built in 24 hours",
-    body: "The 4-agent Coder / Tester / Hacker / Patcher pipeline that became AJENSIKS.",
-  },
-  {
-    date: "OpenSwarm Hackathon - Polaris School of Technology, Bengaluru",
-    title: "DEGENT - a two-agent AI debate arena",
-    body: "Pro and Con agents argue a claim head-to-head; a neutral Moderator agent scores the exchange.",
-  },
-  {
-    date: "2025",
-    title: "CBSE Grade 12 - San Academy",
-    body: "80%.",
+    date: "InnoGenesis Hackathon — Dr. NVR NRI IT, AP",
+    title: "DevSecOps AI Swarm Engine (AJENSIKS) — 24-Hour Sprint",
+    body: "Engineered a 4-agent autonomous pipeline (Coder, Tester, Hacker, Patcher) orchestrating SAST scanning with Bandit and automated CWE code remediation.",
+    badge: "DEVSECOPS",
   },
 ];
 
@@ -339,5 +341,5 @@ export const site = {
   email: "hmaaffan@gmail.com",
   github: "https://github.com/Affan-cybersecuritist",
   linkedin: "https://www.linkedin.com/in/mohamed-affan-h-042048367",
-  availability: "Open to internships — Nov 2026",
+  availability: "Academic Intern @ Prophaze Technologies · Open to Security Engineering Roles",
 };
