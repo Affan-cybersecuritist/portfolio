@@ -78,7 +78,7 @@ function ContactBar({ href, label, value }: { href: string; label: string; value
       rel="noopener noreferrer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative flex flex-col md:flex-row md:items-center justify-between p-8 md:p-12 border-b border-[var(--ink)] overflow-hidden cursor-crosshair"
+      className="group relative flex flex-col md:flex-row md:items-center justify-between p-8 md:p-12 border-b border-[var(--ink)] overflow-hidden cursor-pointer"
     >
       {/* Background slide effect */}
       <div className="absolute inset-0 bg-[var(--ink)] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] z-0" />

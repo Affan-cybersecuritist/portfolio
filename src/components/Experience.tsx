@@ -115,10 +115,10 @@ export default function Experience() {
         {/* Cinematic Section Header */}
         <Reveal as="div" className="mb-32 md:mb-40 text-center flex flex-col items-center">
            <h2 className="font-display font-black text-5xl md:text-[90px] leading-none uppercase tracking-tighter text-[var(--bg)]">
-             The Crucible
+             The Journey
            </h2>
            <p className="font-mono text-[#9B948C] mt-8 max-w-xl mx-auto text-xs md:text-sm leading-relaxed">
-             Industry experience, flagship hackathons, and technical education. The arenas where I engineer reality.
+             From foundational schooling to engineering education and hands-on cybersecurity internship.
            </p>
         </Reveal>
 
@@ -180,7 +180,7 @@ export default function Experience() {
             
             {/* CYBER GATE SEPARATOR (Perfectly Centered Column) */}
             <div className="relative w-full flex flex-col items-start md:items-center justify-start mt-16 pl-[10px] md:pl-0 z-10">
-              <div className="relative z-10 px-8 py-6 border border-[#3A3330] bg-[#0A0707] flex flex-col items-center justify-center gap-4 group hover:border-[var(--red)] transition-all duration-500 cursor-crosshair shadow-[0_0_20px_rgba(0,0,0,0.8)] hover:shadow-[0_0_30px_rgba(215,38,61,0.2)] hover:scale-105">
+              <div className="relative z-10 px-8 py-6 border border-[#3A3330] bg-[#0A0707] flex flex-col items-center justify-center gap-4 group hover:border-[var(--red)] transition-all duration-500 shadow-[0_0_20px_rgba(0,0,0,0.8)] hover:shadow-[0_0_30px_rgba(215,38,61,0.2)] hover:scale-105">
                 <div className="w-3 h-3 bg-[var(--red)] shadow-[0_0_15px_var(--red)] animate-pulse rotate-45 group-hover:rotate-90 transition-transform duration-500" />
                 <span className="font-mono text-[10px] text-[#6A5A55] tracking-[.3em] uppercase group-hover:text-[var(--red)] transition-colors duration-500">
                   SECURITY_CHECK // PASSED

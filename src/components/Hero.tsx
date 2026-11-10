@@ -199,7 +199,7 @@ export default function Hero() {
               <span className="w-8 h-px" style={{ background: "rgba(250,248,245,.4)" }} /> CYBERSECURITY ENGINEER — CHENNAI, INDIA
             </div>
             <h1
-              className="name font-display font-extrabold uppercase leading-[.92] mt-5 mb-2 tracking-[-.02em] cursor-crosshair"
+              className="name font-display font-extrabold uppercase leading-[.92] mt-5 mb-2 tracking-[-.02em]"
               style={{ fontSize: "clamp(46px, 7.4vw, 118px)" }}
             >
               <span className="line block overflow-hidden">

@@ -22,7 +22,7 @@ export default function BuildLog() {
               href={p.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex flex-col md:flex-row md:items-center justify-between py-10 md:py-12 border-b border-[rgba(20,17,16,0.1)] transition-all duration-500 overflow-hidden px-4 md:px-8 cursor-crosshair"
+              className="group relative flex flex-col md:flex-row md:items-center justify-between py-10 md:py-12 border-b border-[rgba(20,17,16,0.1)] transition-all duration-500 overflow-hidden px-4 md:px-8 cursor-pointer"
             >
               
               {/* Background Flash Effect (Slides up on hover) */}
